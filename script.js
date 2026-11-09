@@ -1,8 +1,27 @@
 // script.js : 내 영화 평점 통계(콘솔판)
-// 작성자 : 전동찬(2651060)
+// 작성자 : 김태완(2651020)
 const titles = ["미션 파서블", "미션 임파서블", "미션", "미션 임파서블: 로그네이션", "미션 임파서블: 파이널 레코닝"];
-const ratings = [7.40, 7.03, 7.40, 7.20, 7.16];
+const ratings = [7.40, 7.03, 7.41, 7.20, 7.16];
 const years = [2021, 1996, 1986, 2015, 2025];
+
+
+//즉시 실행 함수 만들기
+(function init(){
+    console.log("나는 함수다. 실행이 되었다");
+})();
+
+// 화살표함수로 함수 정의 하기
+const gugudan = dan => {
+    for(let i=1; i<=9; i++){
+        console.log(`${dan} x ${i} = ${dan*i}`);
+    }
+}
+
+gugudan(7);
+
+const add = (num1, num2) => num1 + num2;
+console.log(add(1234,5678));
+
 let sum = 0;
 for (let i = 0; i < ratings.length; i++) {
  sum = sum + ratings[i];
